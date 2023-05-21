@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deeporange200"
+    tools:context=".GameBoard1P">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_vertical_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_vertical_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_vertical_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_vertical_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_vertical_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_horizontal_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_horizontal_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_horizontal_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_horizontal_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_horizontal_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_1p_horizontal_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline2" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline2" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline2" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline2" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline2" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline2" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline3" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline3" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline3" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline3" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline3" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline3" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline4" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline4" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline4" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline4" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline4" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline4" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline5" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline5" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline5" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline5" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline5" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline5" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline6" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline6" />
+
+    <ImageView
+        android:id="@+id/game_board_1p_metaboy_pic15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_1p_metaboy_pic_cover15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_1p_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_1p_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_1p_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_1p_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_1p_msg_to_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:text="xx"
+        android:textSize="36sp"
+        android:textColor="@color/gray900"
+        android:textAlignment="center"
+        android:alpha="0"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

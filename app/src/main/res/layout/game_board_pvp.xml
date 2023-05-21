@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deeporange200"
+    tools:context=".GameBoardPvp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_vertical_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_vertical_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_vertical_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_vertical_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_vertical_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_horizontal_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_horizontal_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_horizontal_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_horizontal_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_horizontal_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_board_pvp_horizontal_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_player2_turn_indicator2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/rocket_icon_pvp_p2"
+        android:visibility="invisible"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_metaboy_pic1"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_player2_turn_indicator1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="9dp"
+        android:text="P2"
+        android:textSize="26sp"
+        android:textColor="@color/gray800"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/game_board_pvp_player2_turn_indicator2"
+        app:layout_constraintBottom_toBottomOf="@+id/game_board_pvp_player2_turn_indicator2" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_player2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:text="Points: xx"
+        android:textSize="26sp"
+        android:textColor="@color/gray800"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="26sp"
+        app:layout_constraintEnd_toEndOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintBottom_toBottomOf="@+id/game_board_pvp_player2_turn_indicator1" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_msg_to_player2"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@drawable/yellow_bkground"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="xx"
+        android:textSize="30sp"
+        android:textColor="@color/gray800"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:alpha="0"
+        android:textStyle="bold"
+        android:lines="2"
+        android:maxLines="2"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/game_board_pvp_vertical_guideline5" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline2" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline2" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline2" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline2" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline2" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline1"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline2" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline3" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline3" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline3" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline3" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline3" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline2"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline3" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline4" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline4" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline4" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline4" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline4" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline3"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline4" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline5" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline5" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline5" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline5" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline5" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline4"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline5" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline6" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground2"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline6" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_metaboy_pic15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/mb_7271"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_metaboy_pic_cover15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/pic_cover_bkground1"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_horizontal_guideline5"
+        app:layout_constraintBottom_toTopOf="@id/game_board_pvp_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_player1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:text="Points: xx"
+        android:textSize="26sp"
+        android:textColor="@color/gray800"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/game_board_pvp_player1_turn_indicator1" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_player1_turn_indicator1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="9dp"
+        android:text="P1"
+        android:textSize="26sp"
+        android:textColor="@color/gray800"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/game_board_pvp_player1_turn_indicator2"
+        app:layout_constraintTop_toTopOf="@+id/game_board_pvp_player1_turn_indicator2" />
+
+    <ImageView
+        android:id="@+id/game_board_pvp_player1_turn_indicator2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/rocket_icon_pvp_p1"
+        android:visibility="invisible"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toBottomOf="@id/game_board_pvp_metaboy_pic15"
+        app:layout_constraintEnd_toEndOf="@id/game_board_pvp_metaboy_pic15" />
+
+    <TextView
+        android:id="@+id/game_board_pvp_msg_to_player1"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@drawable/yellow_bkground"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="xx"
+        android:textSize="30sp"
+        android:textColor="@color/gray800"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:alpha="0"
+        android:textStyle="bold"
+        android:lines="2"
+        android:maxLines="2"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/game_board_pvp_vertical_guideline1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/game_board_pvp_vertical_guideline5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

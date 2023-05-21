@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluegray900">
+
+    <TextView
+        android:id="@+id/sanctuary_click_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="13dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx"
+        android:textColor="@color/deeporange50"
+        android:textSize="23sp"
+        android:background="@color/deeppurple800"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sanctuary_click_para1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx xx"
+        android:textColor="@color/deeporange50"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.3"
+        app:layout_constraintTop_toBottomOf="@id/sanctuary_click_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sanctuary_click_para2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx xx"
+        android:textColor="@color/deeporange50"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.3"
+        app:layout_constraintTop_toBottomOf="@id/sanctuary_click_para1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sanctuary_click_para3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="16dp"
+        android:text="xx xx"
+        android:textColor="@color/deeporange50"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.3"
+        app:layout_constraintTop_toBottomOf="@id/sanctuary_click_para2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/settings_menu"
+        android:title="Settings"
+        android:icon="@drawable/settings_icon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/acknowledgements_menu"
+        android:title="Acknowledgements"
+        android:icon="@drawable/acknowledgements_icon"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about_menu"
+        android:title="About"
+        android:icon="@drawable/info_icon"
+        app:showAsAction="never" />
+
+</menu>

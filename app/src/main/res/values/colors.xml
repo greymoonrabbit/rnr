@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="deeppurple50">#EDE7F6</color>
+    <color name="deeppurple100">#D1C4E9</color>
+    <color name="deeppurple200">#B39DDB</color>
+    <color name="deeppurple300">#9575CD</color>
+    <color name="deeppurple400">#7E57C2</color>
+    <color name="deeppurple500">#673AB7</color>
+    <color name="deeppurple600">#5E35B1</color>
+    <color name="deeppurple700">#512DA8</color>
+    <color name="deeppurple800">#4527A0</color>
+    <color name="deeppurple900">#311B92</color>
+
+    <color name="deeporange50">#FBE9E7</color>
+    <color name="deeporange100">#FFCCBC</color>
+    <color name="deeporange200">#FFAB91</color>
+    <color name="deeporange300">#FF8A65</color>
+    <color name="deeporange400">#FF7043</color>
+    <color name="deeporange500">#FF5722</color>
+    <color name="deeporange600">#F4511E</color>
+    <color name="deeporange700">#E64A19</color>
+    <color name="deeporange800">#D84315</color>
+    <color name="deeporange900">#BF360C</color>
+
+    <color name="gray50">#FAFAFA</color>
+    <color name="gray600">#757575</color>
+    <color name="gray700">#616161</color>
+    <color name="gray800">#424242</color>
+    <color name="gray900">#212121</color>
+
+    <color name="bluegray900">#263238</color>
+
+    <color name="yellow50">#FFFDE7</color>
+
+    <color name="brown600">#6D4C41</color>
+
+
+</resources>

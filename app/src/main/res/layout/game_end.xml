@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/game_end_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deeporange50">
+
+    <TextView
+        android:id="@+id/game_end_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="13dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx"
+        android:textColor="@color/deeporange50"
+        android:textSize="23sp"
+        android:background="@color/deeppurple800"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game_end_para1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx xx"
+        android:textColor="@color/gray800"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.3"
+        app:layout_constraintTop_toBottomOf="@id/game_end_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game_end_para2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx xx"
+        android:textColor="@color/gray800"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.3"
+        app:layout_constraintTop_toBottomOf="@id/game_end_para1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game_end_para3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="16dp"
+        android:text=""
+        android:textColor="@color/gray800"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.3"
+        app:layout_constraintTop_toBottomOf="@id/game_end_para2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/game_end_metaboy_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/mb_3815_cropped"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toBottomOf="@id/game_end_para3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game_end_para4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingStart="9dp"
+        android:paddingBottom="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx"
+        android:textColor="@color/gray800"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/game_end_metaboy_pic"
+        app:layout_constraintStart_toEndOf="@id/game_end_metaboy_pic" />
+
+    <android.widget.Space
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_metaboy_pic"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

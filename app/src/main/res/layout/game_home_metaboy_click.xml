@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/game_home_metaboy_click_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow50">
+
+    <ImageView
+        android:id="@+id/game_home_metaboy_click_metaboy1_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/mb_3815_cropped"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game_home_metaboy_click_para1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="9dp"
+        android:paddingEnd="16dp"
+        android:text="xx"
+        android:textColor="@color/gray800"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/game_home_metaboy_click_metaboy1_pic"
+        app:layout_constraintBottom_toBottomOf="@id/game_home_metaboy_click_metaboy1_pic"
+        app:layout_constraintStart_toEndOf="@id/game_home_metaboy_click_metaboy1_pic"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/game_home_metaboy_click_metaboy2_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/mb_3032_cropped"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toBottomOf="@id/game_home_metaboy_click_metaboy1_pic"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/game_home_metaboy_click_para2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="2dp"
+        android:text="xx"
+        android:textColor="@color/gray800"
+        android:textSize="20sp"
+        android:gravity="end"
+        app:layout_constraintTop_toTopOf="@id/game_home_metaboy_click_metaboy2_pic"
+        app:layout_constraintBottom_toBottomOf="@id/game_home_metaboy_click_metaboy2_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/game_home_metaboy_click_metaboy2_pic" />
+
+    <android.widget.Space
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_home_metaboy_click_metaboy2_pic"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

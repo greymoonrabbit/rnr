@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameHome">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:focusable="true"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/deeporange200" >
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_vertical_guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_vertical_guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_vertical_guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_vertical_guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_vertical_guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_horizontal_guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.26"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_horizontal_guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_horizontal_guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_horizontal_guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.58"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_horizontal_guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.66"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/game_home_horizontal_guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.78"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/game_home_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Pick One !"
+                android:textSize="36sp"
+                android:textColor="@color/gray800"
+                android:textStyle="bold"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="2"
+                android:shadowColor="@color/gray600"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/game_home_horizontal_guideline1"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/game_home_launch_1p_game"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:theme="@style/LaunchGameButtonStyle"
+                android:textAllCaps="false"
+                android:background="@drawable/game_launch_btn_bkground"
+                android:text="1P Game"
+                android:textSize="28sp"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="50"
+                android:shadowColor="@color/yellow50"
+                app:layout_constraintTop_toTopOf="@+id/game_home_horizontal_guideline1"
+                app:layout_constraintBottom_toTopOf="@+id/game_home_horizontal_guideline2"
+                app:layout_constraintStart_toEndOf="@+id/game_home_vertical_guideline1"
+                app:layout_constraintEnd_toStartOf="@+id/game_home_vertical_guideline5" />
+
+            <Button
+                android:id="@+id/game_home_launch_coop_game"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:theme="@style/LaunchGameButtonStyle"
+                android:textAllCaps="false"
+                android:background="@drawable/game_launch_btn_bkground"
+                android:text="2P Co-op Game"
+                android:textSize="26sp"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="50"
+                android:shadowColor="@color/yellow50"
+                app:layout_constraintTop_toTopOf="@+id/game_home_horizontal_guideline3"
+                app:layout_constraintBottom_toTopOf="@+id/game_home_horizontal_guideline4"
+                app:layout_constraintStart_toEndOf="@+id/game_home_vertical_guideline1"
+                app:layout_constraintEnd_toStartOf="@+id/game_home_vertical_guideline5" />
+
+            <Button
+                android:id="@+id/game_home_launch_pvp_game"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:theme="@style/LaunchGameButtonStyle"
+                android:textSize="26sp"
+                android:textAllCaps="false"
+                android:background="@drawable/game_launch_btn_bkground"
+                android:text="2P PvP Game"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="50"
+                android:shadowColor="@color/yellow50"
+                app:layout_constraintTop_toTopOf="@+id/game_home_horizontal_guideline5"
+                app:layout_constraintBottom_toTopOf="@+id/game_home_horizontal_guideline6"
+                app:layout_constraintStart_toEndOf="@+id/game_home_vertical_guideline1"
+                app:layout_constraintEnd_toStartOf="@+id/game_home_vertical_guideline5" />
+
+            <ImageView
+                android:id="@+id/game_home_metaboy_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/mb_3815_cropped"
+                android:contentDescription="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/game_home_marquee_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:text="Someone naughty has created clones!  Please help !"
+                android:textSize="24sp"
+                android:textColor="@color/gray900"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="3"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                app:layout_constraintStart_toEndOf="@+id/game_home_metaboy_pic"
+                app:layout_constraintTop_toTopOf="@+id/game_home_metaboy_pic"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

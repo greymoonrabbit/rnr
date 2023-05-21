@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acknowledgements">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:focusable="true"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray900" >
+
+            <TextView
+                android:id="@+id/acknowledgements_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:text="Acknowledgements"
+                android:textSize="33sp"
+                android:textColor="@color/deeppurple100"
+                android:textAlignment="center"
+                android:lines="1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/acknowledgements_music_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:text="Music"
+                android:textSize="30sp"
+                android:textColor="@color/deeppurple50"
+                android:textAlignment="center"
+                android:lines="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acknowledgements_heading" />
+
+            <TextView
+                android:id="@+id/acknowledgements_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Komiku\nhttps://www.chosic.com/free-music/all/"
+                android:textSize="25sp"
+                android:textColor="@color/deeppurple100"
+                android:textAlignment="center"
+                android:lineSpacingMultiplier="1.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acknowledgements_music_heading" />
+
+            <TextView
+                android:id="@+id/acknowledgements_sfx_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:text="Sound Effects"
+                android:textSize="30sp"
+                android:textColor="@color/deeppurple50"
+                android:textAlignment="center"
+                android:lines="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acknowledgements_music" />
+
+            <TextView
+                android:id="@+id/acknowledgements_sfx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Jsfxr\nhttps://sfxr.me"
+                android:textSize="25sp"
+                android:textColor="@color/deeppurple100"
+                android:textAlignment="center"
+                android:lineSpacingMultiplier="1.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acknowledgements_sfx_heading" />
+
+            <TextView
+                android:id="@+id/acknowledgements_metaboy_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:text="Support"
+                android:textSize="30sp"
+                android:textColor="@color/deeppurple50"
+                android:textAlignment="center"
+                android:lines="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acknowledgements_sfx" />
+
+            <TextView
+                android:id="@+id/acknowledgements_metaboy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="MetaBoy Team\nhttps://metaboy.run/"
+                android:textSize="25sp"
+                android:textColor="@color/deeppurple100"
+                android:textAlignment="center"
+                android:lineSpacingMultiplier="1.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acknowledgements_metaboy_heading" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

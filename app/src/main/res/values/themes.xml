@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Rnr" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/deeppurple800</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/deeporange100</item>
+        <item name="android:itemBackground">@color/deeppurple800</item>
+    </style>
+
+
+    <style name="gameEnd" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/deeporange50</item>
+        <item name="buttonBarPositiveButtonStyle">@style/gameEndButtonStyle</item>
+        <item name="buttonBarStyle">@style/gameEndButtonBarStyle</item>
+    </style>
+
+    <style name="gameEndButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/deeppurple800</item>
+    </style>
+
+    <style name="gameEndButtonBarStyle">
+        <item name="android:background">@color/deeppurple50</item>
+    </style>
+
+
+    <style name="sanctuaryClick" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/deeporange50</item>
+        <item name="buttonBarPositiveButtonStyle">@style/sanctuaryClickPositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/sanctuaryClickNegativeButtonStyle</item>
+        <item name="buttonBarStyle">@style/sanctuaryClickButtonBarStyle</item>
+    </style>
+
+    <style name="sanctuaryClickPositiveButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/deeporange50</item>
+    </style>
+    <style name="sanctuaryClickNegativeButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/deeporange50</item>
+    </style>
+    <style name="sanctuaryClickButtonBarStyle">
+        <item name="android:background">@color/gray900</item>
+    </style>
+
+</resources>
